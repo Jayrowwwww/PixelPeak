@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Welcome to PixelPeak</title>
+</head>
+<body class="font-[Montserrat]">
+    <header class="flex justify-between items-center bg-gray-100 h-20 w-full px-40 z-10 fixed">
+        <div class="flex items-center">
+            <img src="./assets/_imgs/logo-only.png" alt="" class="h-10">
+            <h1 class="font-bold text-[20px]">PixelPeak</h1>
+        </div>
+
+        <ul class="flex gap-20 text-[20px]">
+            <li><a href="#" class="hover:text-sky-400">Products</a></li>
+            <li><a href="#" class="hover:text-sky-400">About</a></li>
+            <li><a href="#" class="hover:text-sky-400">Contact</a></li>
+            <li><a href="#" class="hover:text-sky-400">Cart</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="flex items-center h-screen bg-gray-100 px-40">
+            <div class="flex flex-col">
+                <div class="flex flex-col">
+                    <h1 class="text-[100px]/30 font-bold">Smart Gadgets for Modern Living</h1>
+                    <p class="text-[30px] mt-5">Discover the latest tect innovation.</p>
+                </div>
+    
+                <a href="#"><button class="bg-sky-600 text-white w-60 h-15 rounded-xl mt-20 active:bg-gray-100 active:border-1 active:text-gray-900">Shop Now</button></a>
+            </div>
+
+            <img src="./assets/_imgs/products/watch.png" alt="" class="h-150">
+        </section>
+
+        <section class="flex items-center justify-center bg-gray-100 h-screen">
+            <div class="grid grid-cols-2 gap-x-10 gap-y-20">
+                <div class="relative group flex items-center justify-center h-100 w-200 bg-gray-500 rounded-xl overflow-hidden">
+                    <img src="./assets/_imgs/products/watch.png" alt="" class="h-90">
+                    <img src="./assets/_imgs/products/air-prod.png" alt="" class="h-90">
+                
+                    <div class="absolute flex flex-col py-5 px-10 top-50 w-full bg-white/60 h-[50%] translate-y-full group-hover:translate-y-0 transition-all duration-300">
+                        <h1 class="text-[40px]">Smart Accessories</h1>
+                        <p>Price: $$$</p>
+                        <a href="#" class="underline mt-10">See more details</a>
+                    </div>
+                </div>
+
+                <div class="relative group flex bg-gray-500 rounded-xl h-100 w-90 overflow-hidden">
+                    <img src="./assets/_imgs/products/home-assis.png" alt="">
+                
+                    <div class="absolute flex flex-col py-5 px-10 top-50 w-full bg-white/60 h-[50%] translate-y-full group-hover:translate-y-0 transition-all duration-300">
+                        <h1 class="text-[30px]">Home Assistant</h1>
+                        <p>Price: $$$</p>
+                        <a href="#" class="underline mt-10">See more details</a>
+                    </div>
+                </div>
+
+                <div class="relative group flex items-center justify-center bg-gray-500 rounded-xl h-100 w-200 p-10 overflow-hidden">
+                    <img src="./assets/_imgs/products/headphonse.png" alt="" class="h-90">
+
+                    <div class="absolute flex flex-col py-5 px-10 top-50 w-full bg-white/60 h-[50%] translate-y-full group-hover:translate-y-0 transition-all duration-300">
+                        <h1 class="text-[30px]">Phirapherals</h1>
+                        <p>Price: $$$</p>
+                        <a href="#" class="underline mt-10">See more details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
