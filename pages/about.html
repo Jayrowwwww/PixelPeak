@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>About Us | PixelPeak</title>
+</head>
+
+<body class="font-[Montserrat] bg-[#F8FAFC] text-[#1E293B]">
+  <!-- Header -->
+    <header class="flex justify-between items-center bg-gray-100 h-20 w-full px-40 z-10 fixed shadow-md">
+        <a href="../index.html">
+            <div class="flex items-center">
+                <img src="../assets/_imgs/logo-only.png" alt="Logo" class="h-10" />
+                <h1 class="font-bold text-[20px] ml-2">PixelPeak</h1>
+            </div>
+        </a>
+
+        <ul class="flex gap-20 text-[20px]">
+            <li><a href="../index.html" class="hover:text-[#38BDF8]">Home</a></li>
+            <li><a href="products.html" class="hover:text-[#38BDF8]">Products</a></li>
+            <li><a href="#" class="hover:text-[#38BDF8] font-semibold">About</a></li>
+            <li><a href="./contact.html" class="hover:text-[#38BDF8]">Contact</a></li>
+            <li><a href="./cart.html" class="hover:text-[#38BDF8]">Cart</a></li>
+        </ul>
+    </header>
+
+    <main class="pt-32 pb-20 px-40">
+        <!-- Hero Section -->
+        <section class="text-center mb-20">
+            <h1 class="text-5xl font-bold text-[#0F172A] mb-6">Our Story</h1>
+            <p class="text-xl max-w-3xl mx-auto">
+                PixelPeak was founded in 2020 with a vision to revolutionize the tech retail industry by combining quality and affordability.
+            </p>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="mb-20">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 text-[#0F172A]">Our Mission</h2>
+                    <p class="text-lg mb-4">
+                        We're committed to providing cutting-edge technology products that enhance your daily life without compromising on quality or breaking the bank.
+                    </p>
+                    <p class="text-lg">
+                        Our team carefully curates each product in our inventory to ensure it meets our high standards for performance, durability, and value.
+                    </p>
+                </div>
+
+                <div class="md:w-1/2">
+                    <div class="bg-[#38BDF8] rounded-xl p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-4">Why Choose Us?</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <span class="mr-3">✓</span>
+                                    <span>100% authentic products</span>
+                                </li>
+
+                                <li class="flex items-start">
+                                    <span class="mr-3">✓</span>
+                                    <span>Competitive pricing</span>
+                                </li>
+
+                                <li class="flex items-start">
+                                    <span class="mr-3">✓</span>
+                                    <span>Excellent customer service</span>
+                                </li>
+
+                                <li class="flex items-start">
+                                    <span class="mr-3">✓</span>
+                                    <span>Fast and reliable shipping</span>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-12 text-center text-[#0F172A]">Meet The Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-64 bg-[#38BDF8] flex items-center justify-center">
+                        <span class="text-8xl">👨‍💻</span>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold">Jerreh Salera</h3>
+                        <p class="text-[#3B82F6] mb-3">Founder & CEO</p>
+                        <p class="text-sm">
+                        With over a decade in tech retail, Jerreh leads our vision to make quality tech accessible to everyone.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-64 bg-[#38BDF8] flex items-center justify-center">
+                        <span class="text-8xl">👩‍💼</span>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold">Sarah Chen</h3>
+                        <p class="text-[#3B82F6] mb-3">Operations Manager</p>
+                        <p class="text-sm">
+                        Sarah ensures our operations run smoothly and our customers receive their orders promptly.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-64 bg-[#38BDF8] flex items-center justify-center">
+                        <span class="text-8xl">👨‍🔧</span>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold">Mike Rodriguez</h3>
+                        <p class="text-[#3B82F6] mb-3">Product Specialist</p>
+                        <p class="text-sm">
+                        Mike rigorously tests every product to ensure it meets our quality standards before we offer it to you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="bg-white rounded-xl shadow-md p-12">
+            <h2 class="text-3xl font-bold mb-8 text-center text-[#0F172A]">Our Core Values</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl mb-4 text-[#38BDF8]">💎</div>
+                    
+                    <h3 class="text-xl font-semibold mb-2">Quality</h3>
+                    <p>We stand behind every product we sell with rigorous quality checks.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="text-4xl mb-4 text-[#38BDF8]">🤝</div>
+
+                    <h3 class="text-xl font-semibold mb-2">Integrity</h3>
+                    <p>Honest pricing and transparent business practices.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="text-4xl mb-4 text-[#38BDF8]">🚀</div>
+
+                    <h3 class="text-xl font-semibold mb-2">Innovation</h3>
+                    <p>Constantly seeking the latest tech to enhance your life.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <!-- Footer -->
+    <footer class="bg-[#0F172A] text-white text-center py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="text-lg font-medium mb-2">
+                Copyrights &copy; 2025 PixelPeak — Where <span class="text-[#3B82F6] font-semibold">AFFORDABILITY</span> meets <span class="text-[#38BDF8] font-semibold">QUALITY</span>
+            </p>
+
+            <p class="text-sm opacity-80">
+                Created by: <span class="font-semibold">Jerreh Romer Salera</span>
+            </p>
+
+            <div class="mt-4">
+                <a href="https://www.linkedin.com" class="text-[#38BDF8] hover:text-[#3B82F6] font-semibold">LinkedIn</a>
+                <span class="mx-2 text-white">|</span>
+                <a href="https://github.com/Jayrowwwww" class="text-[#38BDF8] hover:text-[#3B82F6] font-semibold">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

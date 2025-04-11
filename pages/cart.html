@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Your Cart | PixelPeak</title>
+</head>
+
+<body class="font-[Montserrat] bg-[#F8FAFC] text-[#1E293B]">
+    <header class="flex justify-between items-center bg-gray-100 h-20 w-full px-40 z-10 fixed shadow-md">
+        <a href="../index.html">
+            <div class="flex items-center">
+                <img src="../assets/_imgs/logo-only.png" alt="Logo" class="h-10" />
+                <h1 class="font-bold text-[20px] ml-2">PixelPeak</h1>
+            </div>
+        </a>
+
+
+        <ul class="flex gap-20 text-[20px]">
+            <li><a href="../index.html" class="hover:text-[#38BDF8]">Home</a></li>
+            <li><a href="products.html" class="hover:text-[#38BDF8]">Products</a></li>
+            <li><a href="about.html" class="hover:text-[#38BDF8]">About</a></li>
+            <li><a href="contact.html" class="hover:text-[#38BDF8]">Contact</a></li>
+            <li><a href="#" class="hover:text-[#38BDF8] font-semibold">Cart</a></li>
+        </ul>
+    </header>
+
+    <main class="pt-32 pb-20 px-40 min-h-screen">
+        <h1 class="text-4xl font-bold mb-10">Your Shopping Cart</h1>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2">
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <div id="cart-items" class="space-y-6">
+                        <div class="text-center py-10">
+                            <p class="text-lg text-gray-500">Your cart is empty</p>
+                            <a href="products.html" class="text-[#38BDF8] hover:underline mt-2 inline-block">Continue Shopping</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 h-fit sticky top-32">
+                <h2 class="text-2xl font-bold mb-6">Order Summary</h2>
+                
+                <div class="space-y-4">
+                    <div class="flex justify-between">
+                        <span>Subtotal</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <span>Shipping</span>
+                        <span>Free</span>
+                    </div>
+
+                    <div class="flex justify-between border-t pt-4">
+                        <span class="font-bold">Total</span>
+                        <span id="total" class="font-bold">$0.00</span>
+                    </div>
+                </div>
+
+                <button onclick="alert('Proceed to Checkout')" class="w-full bg-[#38BDF8] text-white py-3 rounded-lg hover:bg-[#3B82F6] transition-colors duration-300 font-semibold mt-6">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#0F172A] text-white text-center py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="text-lg font-medium mb-2">
+                Copyrights &copy; 2025 PixelPeak — Where <span class="text-[#3B82F6] font-semibold">AFFORDABILITY</span> meets <span class="text-[#38BDF8] font-semibold">QUALITY</span>
+            </p>
+
+            <p class="text-sm opacity-80">
+                Created by: <span class="font-semibold">Jerreh Romer Salera</span>
+            </p>
+
+            <div class="mt-4">
+                <a href="https://www.linkedin.com" class="text-[#38BDF8] hover:text-[#3B82F6] font-semibold">LinkedIn</a>
+                <span class="mx-2 text-white">|</span>
+                <a href="https://github.com/Jayrowwwww" class="text-[#38BDF8] hover:text-[#3B82F6] font-semibold">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

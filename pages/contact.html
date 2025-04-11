@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Contact Us | PixelPeak</title>
+</head>
+
+<body class="font-[Montserrat] bg-[#F8FAFC] text-[#1E293B]">
+    <header class="flex justify-between items-center bg-gray-100 h-20 w-full px-40 z-10 fixed shadow-md">
+        <a href="../index.html">
+            <div class="flex items-center">
+                <img src="../assets/_imgs/logo-only.png" alt="Logo" class="h-10" />
+                <h1 class="font-bold text-[20px] ml-2">PixelPeak</h1>
+            </div>
+        </a>
+
+        <ul class="flex gap-20 text-[20px]">
+            <li><a href="../index.html" class="hover:text-[#38BDF8]">Home</a></li>
+            <li><a href="./products.html" class="hover:text-[#38BDF8]">Products</a></li>
+            <li><a href="./about.html" class="hover:text-[#38BDF8]">About</a></li>
+            <li><a href="#" class="hover:text-[#38BDF8] font-semibold">Contact</a></li>
+            <li><a href="./cart.html" class="hover:text-[#38BDF8]">Cart</a></li>
+        </ul>
+    </header>
+
+    <main class="pt-32 pb-20 px-40">
+        <section class="text-center mb-16">
+            <h1 class="text-5xl font-bold text-[#0F172A]">Contact Us</h1>
+            <p class="text-lg mt-4">We'd love to hear from you</p>
+        </section>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <!-- Contact Form -->
+            <section class="bg-white rounded-xl shadow-md p-8">
+                <h2 class="text-2xl font-semibold mb-6">Send us a message</h2>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38BDF8]">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="email" class="block mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38BDF8]">
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="message" class="block mb-2">Your Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38BDF8]"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-[#38BDF8] text-white py-3 rounded-lg hover:bg-[#3B82F6] transition-colors duration-300 font-semibold">
+                            Send Message
+                        </button>
+                    </form>
+            </section>
+
+        <!-- Contact Information -->
+            <section>
+                <div class="bg-white rounded-xl shadow-md p-8 mb-8">
+                    <h2 class="text-2xl font-semibold mb-6">Contact Information</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <span class="text-[#38BDF8] mr-3 mt-1">📍</span>
+
+                            <div>
+                                <h3 class="font-semibold">Address</h3>
+                                <p>123 Tech Street, Silicon Valley, CA 94000</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <span class="text-[#38BDF8] mr-3 mt-1">📞</span>
+                            <div>
+                                <h3 class="font-semibold">Phone</h3>
+                                <p>+63 123 456 7890</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <span class="text-[#38BDF8] mr-3 mt-1">✉️</span>
+                            <div>
+                                <h3 class="font-semibold">Email</h3>
+                                <p>contact@pixelpeak.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Placeholder -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <p class="text-gray-500">Map placeholder</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-[#0F172A] text-white text-center py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="text-lg font-medium mb-2">
+                Copyrights &copy; 2025 PixelPeak — Where <span class="text-[#3B82F6] font-semibold">AFFORDABILITY</span> meets <span class="text-[#38BDF8] font-semibold">QUALITY</span>
+            </p>
+
+            <p class="text-sm opacity-80">
+                Created by: <span class="font-semibold">Jerreh Romer Salera</span>
+            </p>  
+
+            <div class="mt-4">
+                <a href="https://www.linkedin.com" class="text-[#38BDF8] hover:text-[#3B82F6] font-semibold">LinkedIn</a>
+                <span class="mx-2 text-white">|</span>
+                <a href="https://github.com/Jayrowwwww" class="text-[#38BDF8] hover:text-[#3B82F6] font-semibold">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
