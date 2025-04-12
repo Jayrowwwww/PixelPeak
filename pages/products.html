@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <title>Our Products | PixelPeak</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="../assets/_imgs/favicon.png" type="image/x-icon">
+    <title>Our Products | PixelPeak</title>
 </head>
-
 <body class="font-[Montserrat] bg-[#F8FAFC] text-[#1E293B]">
     <header class="flex justify-between items-center bg-gray-100 h-20 w-full px-40 z-10 fixed shadow-md">
         <a href="../index.html">
@@ -32,33 +32,37 @@
         <h1 class="text-5xl font-bold mb-16 text-center text-[#0F172A]">Our Products</h1>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6 flex justify-center">
-                    <img src="../assets/_imgs/products/watch.png" alt="Smart Watch" class="h-48 object-contain" />
+            <a href="./products-page/watch.html">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-6 flex justify-center">
+                        <img src="../assets/_imgs/products/watch.png" alt="Smart Watch" class="h-48 object-contain" />
+                    </div>
+                    
+                    <div class="px-6 pb-6">
+                        <h2 class="text-xl font-semibold mb-2">Smart Watch</h2>
+                        <p class="text-lg text-[#3B82F6] font-bold mb-4">$199.99</p>
+                        <button class="w-full bg-[#38BDF8] text-white py-2 rounded-lg hover:bg-[#3B82F6] transition-colors">
+                            Add to Cart
+                        </button>
+                    </div>
                 </div>
-                
-                <div class="px-6 pb-6">
-                    <h2 class="text-xl font-semibold mb-2">Smart Watch</h2>
-                    <p class="text-lg text-[#3B82F6] font-bold mb-4">$199.99</p>
-                    <button class="w-full bg-[#38BDF8] text-white py-2 rounded-lg hover:bg-[#3B82F6] transition-colors">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
+            </a>
 
-            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6 flex justify-center">
-                    <img src="../assets/_imgs/products/air-prod.png" alt="AirPods" class="h-48 object-contain" />
+            <a href="./products-page/earbuds.html">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-6 flex justify-center">
+                        <img src="../assets/_imgs/products/air-prod.png" alt="AirPods" class="h-48 object-contain" />
+                    </div>
+    
+                    <div class="px-6 pb-6">
+                        <h2 class="text-xl font-semibold mb-2">Wireless Earbuds</h2>
+                        <p class="text-lg text-[#3B82F6] font-bold mb-4">$129.99</p>
+                        <button class="w-full bg-[#38BDF8] text-white py-2 rounded-lg hover:bg-[#3B82F6] transition-colors">
+                            Add to Cart
+                        </button>
+                    </div>
                 </div>
-
-                <div class="px-6 pb-6">
-                    <h2 class="text-xl font-semibold mb-2">Wireless Earbuds</h2>
-                    <p class="text-lg text-[#3B82F6] font-bold mb-4">$129.99</p>
-                    <button class="w-full bg-[#38BDF8] text-white py-2 rounded-lg hover:bg-[#3B82F6] transition-colors">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
+            </a>
 
             <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div class="p-6 flex justify-center">
@@ -202,7 +206,6 @@
         </div>
     </main>
 
-  <!-- Footer -->
     <footer class="bg-[#0F172A] text-white text-center py-8">
         <div class="max-w-6xl mx-auto px-4">
             <p class="text-lg font-medium mb-2">

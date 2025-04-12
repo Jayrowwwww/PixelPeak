@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <style>
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateX(-20px); }
-      to { opacity: 1; transform: translateX(0); }
-    }
-    .animate-fadeIn {
-      animation: fadeIn 1s ease-out forwards;
-    }
-
-    @keyframes imgFadeIn{
-        from {opacity: 0; transform: translateX(20px);}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="./assets/_imgs/favicon.png" type="image/x-icon">
+    <style>
+        @keyframes fadeIn {
+        from { opacity: 0; transform: translateX(-20px); }
         to { opacity: 1; transform: translateX(0); }
-    }
+        }
+        .animate-fadeIn {
+        animation: fadeIn 1s ease-out forwards;
+        }
 
-    .animate-imgFadeIn{
-        animation: imgFadeIn 1s ease-out forwards   ;
-    }
-  </style>
-  <title>Welcome to PixelPeak</title>
+        @keyframes imgFadeIn{
+            from {opacity: 0; transform: translateX(20px);}
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .animate-imgFadeIn{
+            animation: imgFadeIn 1s ease-out forwards   ;
+        }
+    </style>
+    <title>Welcome to PixelPeak</title>
 </head>
 
-<body class="font-[Montserrat] bg-[#F8FAFC] text-[#1E293B] overflow-x-hidden">
-  <!-- Header -->
+<body class="font-[Montserrat] bg-[#F8FAFC] text-[#1E293B]">
     <header class="flex justify-between items-center bg-gray-100 h-20 w-full px-40 z-10 fixed shadow-md">
         <a href="../index.html">
             <div class="flex items-center">
@@ -122,20 +122,22 @@
         <section class="h-[80vh] pt-20 bg-[#F8FAFC] px-40">
             <h1 class="text-5xl font-semibold mb-10 text-[#0F172A]">Featured Products</h1>
 
-            <div class="flex items-center gap-3" id="container-1">
-                <div class="flex gap-10">
-                    <div class="flex flex-col bg-white p-6 rounded-2xl shadow-lg w-80">
-                        <div class="rounded-3xl bg-[#38BDF8] p-4 mb-4 flex justify-center">
-                            <img src="./assets/_imgs/products/watch.png" alt="Smart watch" class="h-60 object-contain" />
+            <div class="flex items-center gap-3">
+                <a href="./pages/products-page/watch.html">
+                    <div class="block">
+                        <div class="flex flex-col bg-white p-6 rounded-2xl shadow-lg w-80">
+                            <div class="rounded-3xl bg-[#38BDF8] p-4 mb-4 flex justify-center">
+                                <img src="./assets/_imgs/products/watch.png" alt="Smart watch" class="h-60 object-contain" />
+                            </div>
+        
+                            <h2 class="text-xl font-semibold text-[#0F172A]">Smart Watch</h2>
+                            <p class="text-lg my-2 text-[#1E293B]">$199.99</p>
+                            <a href="#" class="text-[#3B82F6] underline">See more</a>
                         </div>
-    
-                        <h2 class="text-xl font-semibold text-[#0F172A]">Smart Watch</h2>
-                        <p class="text-lg my-2 text-[#1E293B]">$999</p>
-                        <a href="#" class="text-[#3B82F6] underline">See more</a>
-                    </div>
-                </div>  
+                    </div> 
+                </a> 
 
-                <div class="flex gap-10">
+                <div class="block">
                     <div class="flex flex-col bg-white p-6 rounded-2xl shadow-lg w-80">
                         <div class="rounded-3xl bg-[#38BDF8] p-4 mb-4 flex justify-center">
                             <img src="./assets/_imgs/products/keyboard.png" alt="Keyboard" class="h-60 object-contain" />
@@ -147,7 +149,7 @@
                     </div>
                 </div>  
 
-                <div class="flex gap-10">
+                <div class="block">
                     <div class="flex flex-col bg-white p-6 rounded-2xl shadow-lg w-80">
                         <div class="rounded-3xl bg-[#38BDF8] p-4 mb-4 flex justify-center">
                             <img src="./assets/_imgs/products/mouse.png" alt="Mouse" class="h-60 object-contain" />
@@ -159,19 +161,21 @@
                     </div>
                 </div>  
 
-                <div class="flex gap-10">
-                    <div class="flex flex-col bg-white p-6 rounded-2xl shadow-lg w-80">
-                        <div class="rounded-3xl bg-[#38BDF8] p-4 mb-4 flex justify-center">
-                            <img src="./assets/_imgs/products/air-prod.png" alt="ErPads" class="h-60 object-contain" />
+                <a href="./pages/products-page/earbuds.html">
+                    <div class="block">
+                        <div class="flex flex-col bg-white p-6 rounded-2xl shadow-lg w-80">
+                            <div class="rounded-3xl bg-[#38BDF8] p-4 mb-4 flex justify-center">
+                                <img src="./assets/_imgs/products/air-prod.png" alt="ErPads" class="h-60 object-contain" />
+                            </div>
+        
+                            <h2 class="text-xl font-semibold text-[#0F172A]">ErPads</h2>
+                            <p class="text-lg my-2 text-[#1E293B]">$999</p>
+                            <a href="#" class="text-[#3B82F6] underline">See more</a>
                         </div>
-    
-                        <h2 class="text-xl font-semibold text-[#0F172A]">ErPads</h2>
-                        <p class="text-lg my-2 text-[#1E293B]">$999</p>
-                        <a href="#" class="text-[#3B82F6] underline">See more</a>
-                    </div>
-                </div>  
+                    </div>  
+                </a>
 
-                <div class="flex gap-10">
+                <div class="block">
                     <div class="flex flex-col bg-white p-6 rounded-2xl shadow-lg w-80">
                         <div class="rounded-3xl bg-[#38BDF8] p-4 mb-4 flex justify-center">
                             <img src="./assets/_imgs/products/home-assis.png" alt="Blotot" class="h-60 object-contain" />

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <title>Contact Us | PixelPeak</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="../assets/_imgs/favicon.png" type="image/x-icon">
+    <title>Contact Us | PixelPeak</title>
 </head>
 
 <body class="font-[Montserrat] bg-[#F8FAFC] text-[#1E293B]">
@@ -40,17 +41,17 @@
                     <form>
                         <div class="mb-4">
                             <label for="name" class="block mb-2">Your Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38BDF8]">
+                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38BDF8]" placeholder="Full Name" required>
                         </div>
 
                         <div class="mb-4">
                             <label for="email" class="block mb-2">Email Address</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38BDF8]">
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38BDF8]" placeholder="Email" required>
                         </div>
 
                         <div class="mb-6">
                             <label for="message" class="block mb-2">Your Message</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38BDF8]"></textarea>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38BDF8]" placeholder="Message"></textarea>
                         </div>
 
                         <button type="submit" class="w-full bg-[#38BDF8] text-white py-3 rounded-lg hover:bg-[#3B82F6] transition-colors duration-300 font-semibold">
@@ -69,7 +70,7 @@
 
                             <div>
                                 <h3 class="font-semibold">Address</h3>
-                                <p>123 Tech Street, Silicon Valley, CA 94000</p>
+                                <p>123 Iskina Japan, Philippines, Earth 6969</p>
                             </div>
                         </div>
 
@@ -85,7 +86,7 @@
                             <span class="text-[#38BDF8] mr-3 mt-1">✉️</span>
                             <div>
                                 <h3 class="font-semibold">Email</h3>
-                                <p>contact@pixelpeak.com</p>
+                                <p>pixelpeak@example.com</p>
                             </div>
                         </div>
                     </div>
@@ -93,8 +94,9 @@
 
                 <!-- Map Placeholder -->
                 <div class="bg-white rounded-xl shadow-md overflow-hidden">
-                    <div class="h-64 bg-gray-200 flex items-center justify-center">
-                        <p class="text-gray-500">Map placeholder</p>
+                    <div class="relative h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="../assets/_imgs/MapChart_Map.png" alt="">
+                        <p class="absolute text-gray-500">Everywhere/Anywhere/and there</p>
                     </div>
                 </div>
             </section>
