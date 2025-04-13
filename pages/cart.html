@@ -7,30 +7,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link rel="shortcut icon" href="../assets/_imgs/favicon.png" type="image/x-icon">
     <title>Your Cart | PixelPeak</title>
 </head>
 
 <body class="font-[Montserrat] bg-[#F8FAFC] text-[#1E293B]">
-    <header class="flex justify-between items-center bg-gray-100 h-20 w-full px-40 z-10 fixed shadow-md">
-        <a href="../index.html">
+    <header class="flex justify-between items-center bg-gray-100 h-20 w-full px-3 md:px-40 z-10 fixed shadow-md">
+        <!-- Logo -->
+        <a href="./index.html">
             <div class="flex items-center">
                 <img src="../assets/_imgs/logo-only.png" alt="Logo" class="h-10" />
                 <h1 class="font-bold text-[20px] ml-2">PixelPeak</h1>
             </div>
         </a>
 
+        <!-- Mobile menu button -->
+        <button class="md:hidden text-sky-800 text-3xl focus:outline-none" id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-        <ul class="flex gap-20 text-[20px]">
+        <!-- Desktop navigation -->
+        <ul class="md:flex gap-20 text-[20px] hidden">
             <li><a href="../index.html" class="hover:text-[#38BDF8]">Home</a></li>
-            <li><a href="products.html" class="hover:text-[#38BDF8]">Products</a></li>
-            <li><a href="about.html" class="hover:text-[#38BDF8]">About</a></li>
-            <li><a href="contact.html" class="hover:text-[#38BDF8]">Contact</a></li>
-            <li><a href="#" class="hover:text-[#38BDF8] font-semibold">Cart</a></li>
+            <li><a href="../pages/products.html" class="hover:text-[#38BDF8]">Products</a></li>
+            <li><a href="../pages/about.html" class="hover:text-[#38BDF8]">About</a></li>
+            <li><a href="../pages/contact.html" class="hover:text-[#38BDF8]">Contact</a></li>
+            <li><a href="../pages/cart.html" class="hover:text-[#38BDF8] font-semibold">Cart</a></li>
+        </ul>
+
+        <!-- Mobile navigation -->
+        <ul class="grid grid-rows-4 items-center bg-gray-100 shadow-md text-[20px] gap-10 hidden absolute pl-5 py-7 top-20 left-0 w-full" id="mobile-menu">
+            <li><a href="../index.html" class="hover:text-[#38BDF8]">Home</a></li>
+            <li><a href="../pages/products.html" class="hover:text-[#38BDF8]">Products</a></li>
+            <li><a href="../pages/about.html" class="hover:text-[#38BDF8]">About</a></li>
+            <li><a href="../pages/contact.html" class="hover:text-[#38BDF8]">Contact</a></li>
+            <li><a href="../pages/cart.html" class="hover:text-[#38BDF8] font-semibold">Cart</a></li>
         </ul>
     </header>
 
-    <main class="pt-32 pb-20 px-40 min-h-screen">
+    <main class="pt-32 pb-20 px-5 md:px-40 min-h-screen">
         <h1 class="text-4xl font-bold mb-10">Your Shopping Cart</h1>
         
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -89,5 +105,6 @@
             </div>
         </div>
     </footer>
+<script src="../assets/js/script.js"></script>
 </body>
 </html>

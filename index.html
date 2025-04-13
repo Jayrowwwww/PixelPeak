@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="shortcut icon" href="./assets/_imgs/favicon.png" type="image/x-icon">
     <style>
@@ -30,15 +31,28 @@
 </head>
 
 <body class="font-[Montserrat] bg-[#F8FAFC] text-[#1E293B]">
-    <header class="flex justify-between items-center bg-gray-100 h-20 w-full px-40 z-10 fixed shadow-md">
-        <a href="./index.html">
-            <div class="flex items-center">
-                <img src="./assets/_imgs/logo-only.png" alt="Logo" class="h-10" />
-                <h1 class="font-bold text-[20px] ml-2">PixelPeak</h1>
-            </div>
-        </a>
+    <header class="flex justify-between items-center bg-gray-100 h-20 w-full md:px-40 z-10 fixed shadow-md">
+            <a href="./index.html">
+                <div class="flex items-center">
+                    <img src="./assets/_imgs/logo-only.png" alt="Logo" class="h-10" />
+                    <h1 class="font-bold text-[20px] ml-2">PixelPeak</h1>
+                </div>
+            </a>
+    
+            <button class="md:hidden text-sky-800 text-3xl focus:outline-none" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+    
+            <ul class="md:flex gap-20 text-[20px] hidden">
+                <li><a href="./index.html" class="hover:text-[#38BDF8] font-semibold">Home</a></li>
+                <li><a href="./pages/products.html" class="hover:text-[#38BDF8]">Products</a></li>
+                <li><a href="./pages/about.html" class="hover:text-[#38BDF8]">About</a></li>
+                <li><a href="./pages/contact.html" class="hover:text-[#38BDF8]">Contact</a></li>
+                <li><a href="./pages/cart.html" class="hover:text-[#38BDF8]">Cart</a></li>
+            </ul>
 
-        <ul class="flex gap-20 text-[20px]">
+        <!-- mobile menu -->
+        <ul class="grid grid-rows-[repeat(4,20px)] items-center bg-gray-100 shadow-md text-[20px] gap-10 hidden absolute pl-5 py-7 top-20 left-0 w-full" id="mobile-menu">
             <li><a href="./index.html" class="hover:text-[#38BDF8] font-semibold">Home</a></li>
             <li><a href="./pages/products.html" class="hover:text-[#38BDF8]">Products</a></li>
             <li><a href="./pages/about.html" class="hover:text-[#38BDF8]">About</a></li>
@@ -48,27 +62,27 @@
     </header>
 
     <main>
-        <section class="flex items-center h-screen px-40 ">             
-            <div class="flex flex-col opacity-0 animate-fadeIn">                
+        <section class="flex items-center h-screen w-full px-3 py-15 md:px-40 overflow-x-hidden">             
+            <div class="relative flex flex-col my-auto opacity-0 animate-fadeIn">                
                  <div class="flex flex-col">                     
-                    <h1 class="text-[100px]/30 font-bold">Smart Gadgets for Modern Living</h1>                     
-                    <p class="text-[30px] mt-5">Discover the latest tect innovation.</p>                 
+                    <h1 class="text-[50px] md:text-[100px]/30 font-bold">Smart Gadgets for Modern Living</h1>                     
+                    <p class="text-xl md:text-[30px] mt-10 md:mt-5">Discover the latest text innovation.</p>                 
                 </div>  
 
-                <a href="./pages/products.html"><button class="bg-sky-600 text-white w-60 h-15 rounded-xl mt-20 active:bg-gray-100 active:border-1 active:text-gray-900">Shop Now</button></a>             
+                <a href="./pages/products.html"><button class="bg-sky-600 text-white w-60 h-15 rounded-xl mt-5 md:mt-20 active:bg-gray-100 active:border-1 active:text-gray-900">Shop Now</button></a>             
             </div>  
 
-            <img src="./assets/_imgs/products/watch.png" alt="" class="h-150 opacity-0 animate-imgFadeIn">         
+            <img src="./assets/_imgs/products/watch.png" alt="" class="absolute translate-x-40 md:translate-x-0 md:static z-[-1] md:z-1 md:h-150 opacity-0 animate-imgFadeIn">         
         </section>
 
         <!-- Product Grid -->
-        <section class="flex items-center justify-center bg-[#F8FAFC] min-h-screen px-40">
-            <div class="grid grid-cols-4 grid-rows-[350px_350px] gap-10 w-full">
+        <section class="flex items-center justify-center bg-[#F8FAFC] md:h-screen md:px-40">
+            <div class="grid grid-cols-3 md:grid-cols-4 grid-rows-[200px_200px] md:grid-rows-[350px_350px] gap-2 md:gap-10 px-5 w-full">
                 <!-- Product 1 -->
                 <div class="relative group flex flex-col justify-center bg-gray-400 rounded-xl overflow-hidden col-span-2 hover:bg-[#38BDF8] duration-300">
                     <div class="flex justify-center items-center gap-4 p-4 group-hover:scale-110 duration-300">
                         <img src="./assets/_imgs/products/watch.png" alt="" class="h-60 object-contain" />
-                        <img src="./assets/_imgs/products/air-prod.png" alt="" class="h-60 object-contain" />
+                        <img src="./assets/_imgs/products/air-prod.png" alt="" class="h-60 object-contain hidden md:inline" />
                     </div>
 
                     <div class="absolute flex flex-col py-5 px-10 top-1/2 w-full bg-white/60 h-[50%] translate-y-full group-hover:translate-y-0 transition-all duration-300">
@@ -88,7 +102,7 @@
                 </div>
 
                 <!-- Product 3 -->
-                <div class="relative group flex bg-gray-400 rounded-xl overflow-hidden row-span-2 hover:bg-[#38BDF8] duration-300">
+                <div class="hidden relative group md:flex bg-gray-400 rounded-xl overflow-hidden row-span-2 hover:bg-[#38BDF8] duration-300">
                     <img src="./assets/_imgs/products/electric-fan.png" alt="" class="object-cover w-full h-full group-hover:scale-110 duration-300" />
 
                     <div class="absolute flex flex-col py-5 px-10 top-1/2 w-full bg-white/60 h-[40%] translate-y-110 group-hover:translate-y-30 transition-all duration-300">
@@ -99,7 +113,7 @@
 
                 <!-- Product 4 -->
                 <div class="relative group flex bg-gray-400 rounded-xl overflow-hidden hover:bg-[#38BDF8] duration-300">
-                    <img src="./assets/_imgs/products/powerbank.png" alt="" class="p-10 object-contain group-hover:scale-110 duration-300" />
+                    <img src="./assets/_imgs/products/powerbank.png" alt="" class="object-contain group-hover:scale-110 duration-300" />
 
                     <div class="absolute flex flex-col py-5 px-10 top-1/2 w-full bg-white/60 h-[50%] translate-y-full group-hover:translate-y-0 transition-all duration-300">
                         <h1 class="text-[30px] font-semibold text-[#0F172A]">Powerbank</h1>
@@ -119,12 +133,12 @@
             </div>
         </section>
 
-        <section class="h-[80vh] pt-20 bg-[#F8FAFC] px-40">
-            <h1 class="text-5xl font-semibold mb-10 text-[#0F172A]">Featured Products</h1>
+        <section class="h-screen md:h-[80vh] pt-20 bg-[#F8FAFC] px-3 md:px-40">
+            <h1 class="text-3xl md:text-5xl font-semibold mb-10 text-[#0F172A]">Featured Products</h1>
 
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-3 overflow-scroll">
                 <a href="./pages/products-page/watch.html">
-                    <div class="block">
+                    <div class="block hover:scale-102 duration-300 ease-out">
                         <div class="flex flex-col bg-white p-6 rounded-2xl shadow-lg w-80">
                             <div class="rounded-3xl bg-[#38BDF8] p-4 mb-4 flex justify-center">
                                 <img src="./assets/_imgs/products/watch.png" alt="Smart watch" class="h-60 object-contain" />
@@ -137,7 +151,7 @@
                     </div> 
                 </a> 
 
-                <div class="block">
+                <div class="block hover:scale-102 duration-300 ease-out">
                     <div class="flex flex-col bg-white p-6 rounded-2xl shadow-lg w-80">
                         <div class="rounded-3xl bg-[#38BDF8] p-4 mb-4 flex justify-center">
                             <img src="./assets/_imgs/products/keyboard.png" alt="Keyboard" class="h-60 object-contain" />
@@ -149,7 +163,7 @@
                     </div>
                 </div>  
 
-                <div class="block">
+                <div class="block hover:scale-102 duration-300 ease-out">
                     <div class="flex flex-col bg-white p-6 rounded-2xl shadow-lg w-80">
                         <div class="rounded-3xl bg-[#38BDF8] p-4 mb-4 flex justify-center">
                             <img src="./assets/_imgs/products/mouse.png" alt="Mouse" class="h-60 object-contain" />
@@ -162,7 +176,7 @@
                 </div>  
 
                 <a href="./pages/products-page/earbuds.html">
-                    <div class="block">
+                    <div class="block hover:scale-102 duration-300 ease-out">
                         <div class="flex flex-col bg-white p-6 rounded-2xl shadow-lg w-80">
                             <div class="rounded-3xl bg-[#38BDF8] p-4 mb-4 flex justify-center">
                                 <img src="./assets/_imgs/products/air-prod.png" alt="ErPads" class="h-60 object-contain" />
@@ -175,7 +189,7 @@
                     </div>  
                 </a>
 
-                <div class="block">
+                <div class="block hover:scale-102 duration-300 ease-out">
                     <div class="flex flex-col bg-white p-6 rounded-2xl shadow-lg w-80">
                         <div class="rounded-3xl bg-[#38BDF8] p-4 mb-4 flex justify-center">
                             <img src="./assets/_imgs/products/home-assis.png" alt="Blotot" class="h-60 object-contain" />
@@ -186,6 +200,10 @@
                         <a href="#" class="text-[#3B82F6] underline">See more</a>
                     </div>
                 </div>  
+            </div>
+
+            <div class="flex justify-center mt-10 md:hidden">
+                <a href="./pages/products.html" class="underline">see more →</a>
             </div>
         </section>
     </main>
@@ -206,6 +224,8 @@
                 <a href="https://github.com/Jayrowwwww" class="text-[#38BDF8] hover:text-[#3B82F6] font-semibold">GitHub</a>
             </div>
         </div>
-    </footer>      
+    </footer>  
+    
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
