@@ -31,10 +31,10 @@
 </head>
 
 <body class="font-[Montserrat] bg-[#F8FAFC] text-[#1E293B]">
-    <header class="flex justify-between items-center bg-gray-100 h-20 w-full md:px-40 z-10 fixed shadow-md">
+    <header class="flex justify-between items-center bg-gray-100 h-20 w-full px-5 md:px-40 z-10 fixed shadow-md">
             <a href="./index.html">
                 <div class="flex items-center">
-                    <img src="./assets/_imgs/logo-only.png" alt="Logo" class="h-10" />
+                    <img src="./assets/_imgs/logo-only.png" alt="Logo" class="h-9 md:h-10" />
                     <h1 class="font-bold text-[20px] ml-2">PixelPeak</h1>
                 </div>
             </a>
@@ -62,8 +62,8 @@
     </header>
 
     <main>
-        <section class="flex items-center h-screen w-full px-3 py-15 md:px-40 overflow-x-hidden">             
-            <div class="relative flex flex-col my-auto opacity-0 animate-fadeIn">                
+        <section class="relative flex items-center h-screen w-full px-3 py-15 md:px-40 bg-[url(./assets/_imgs/bg-1.jpg)] overflow-x-hidden">             
+            <div class="flex flex-col my-auto opacity-0 z-[1] animate-fadeIn">                
                  <div class="flex flex-col">                     
                     <h1 class="text-[50px] md:text-[100px]/30 font-bold">Smart Gadgets for Modern Living</h1>                     
                     <p class="text-xl md:text-[30px] mt-10 md:mt-5">Discover the latest text innovation.</p>                 
@@ -74,14 +74,14 @@
                 </a>             
             </div>  
 
-            <img src="./assets/_imgs/products/watch.png" alt="" class="absolute translate-x-40 md:translate-x-0 md:static z-[-1] md:z-1 md:h-150 opacity-0 animate-imgFadeIn">         
+            <img src="./assets/_imgs/products/watch.png" alt="" class="absolute translate-x-40 md:translate-x-0 md:static md:z-1 md:h-150 opacity-0 animate-imgFadeIn">         
         </section>
 
         <!-- Product Grid -->
-        <section class="flex items-center justify-center bg-[#F8FAFC] md:h-screen md:px-40">
+        <section class="flex items-center justify-center py-5 bg-[#F8FAFC] md:h-screen md:px-40">
             <div class="grid grid-cols-3 md:grid-cols-4 grid-rows-[200px_200px] md:grid-rows-[350px_350px] gap-2 md:gap-10 px-5 w-full">
                 <!-- Product 1 -->
-                <div class="relative group flex flex-col justify-center bg-gray-400 rounded-xl overflow-hidden col-span-2 hover:bg-[#38BDF8] duration-300">
+                <div class="relative group flex flex-col justify-center bg-gray-400 rounded-xl overflow-hidden col-span-2 active:bg-[#38BDF8] md:hover:bg-[#38BDF8] md:duration-300">
                     <div class="flex justify-center items-center gap-4 p-4 group-hover:scale-110 duration-300">
                         <img src="./assets/_imgs/products/watch.png" alt="" class="h-60 object-contain" />
                         <img src="./assets/_imgs/products/air-prod.png" alt="" class="h-60 object-contain hidden md:inline" />
@@ -94,7 +94,7 @@
                 </div>
 
                 <!-- Product 2 -->
-                <div class="relative group flex bg-gray-400 rounded-xl overflow-hidden hover:bg-[#38BDF8] duration-300">
+                <div class="relative group flex bg-gray-400 rounded-xl overflow-hidden active:bg-[#38BDF8] md:hover:bg-[#38BDF8] md:duration-300">
                     <img src="./assets/_imgs/products/home-assis.png" alt="" class="object-cover w-full h-full group-hover:scale-110 duration-300" />
 
                     <div class="absolute flex flex-col py-5 px-10 top-1/2 w-full bg-white/60 h-[50%] translate-y-full group-hover:translate-y-0 transition-all duration-300">
@@ -104,7 +104,7 @@
                 </div>
 
                 <!-- Product 3 -->
-                <div class="hidden relative group md:flex bg-gray-400 rounded-xl overflow-hidden row-span-2 hover:bg-[#38BDF8] duration-300">
+                <div class="hidden relative group md:flex bg-gray-400 rounded-xl overflow-hidden row-span-2 active:bg-[#38BDF8] md:hover:bg-[#38BDF8] md:duration-300">
                     <img src="./assets/_imgs/products/electric-fan.png" alt="" class="object-cover w-full h-full group-hover:scale-110 duration-300" />
 
                     <div class="absolute flex flex-col py-5 px-10 top-1/2 w-full bg-white/60 h-[40%] translate-y-110 group-hover:translate-y-30 transition-all duration-300">
@@ -114,7 +114,7 @@
                 </div>
 
                 <!-- Product 4 -->
-                <div class="relative group flex bg-gray-400 rounded-xl overflow-hidden hover:bg-[#38BDF8] duration-300">
+                <div class="relative group flex bg-gray-400 rounded-xl overflow-hidden active:bg-[#38BDF8] md:hover:bg-[#38BDF8] md:duration-300">
                     <img src="./assets/_imgs/products/powerbank.png" alt="" class="object-contain group-hover:scale-110 duration-300" />
 
                     <div class="absolute flex flex-col py-5 px-10 top-1/2 w-full bg-white/60 h-[50%] translate-y-full group-hover:translate-y-0 transition-all duration-300">
@@ -124,7 +124,7 @@
                 </div>
 
                 <!-- Product 5 -->
-                <div class="relative group flex items-center justify-center bg-gray-400 rounded-xl p-10 overflow-hidden col-span-2 hover:bg-[#38BDF8] duration-300">
+                <div class="relative group flex items-center justify-center bg-gray-400 rounded-xl p-10 overflow-hidden col-span-2 active:bg-[#38BDF8] md:hover:bg-[#38BDF8] md:duration-300">
                     <img src="./assets/_imgs/products/headphonse.png" alt="" class="h-70 w-full object-contain group-hover:scale-110 duration-300" />
 
                     <div class="absolute flex flex-col py-5 px-10 top-1/2 w-full bg-white/60 h-[50%] translate-y-full group-hover:translate-y-0 transition-all duration-300">
@@ -210,7 +210,7 @@
                 </a>  
             </div>
 
-            <div class="flex justify-center mt-10 md:hidden">
+            <div class="flex justify-center mt-5 md:hidden">
                 <a href="./pages/products.html" class="underline">see more →</a>
             </div>
         </section>
